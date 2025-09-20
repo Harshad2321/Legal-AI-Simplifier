@@ -79,6 +79,15 @@ npm start
 # Opens at http://localhost:3000
 ```
 
+### 4. Deploy to GitHub Pages
+```bash
+# Build and deploy to GitHub Pages
+cd frontend
+npm run deploy
+```
+
+**Live Demo**: https://harshad2321.github.io/Legal-AI-Simplifier
+
 ## 🎯 Development Workflow
 
 ### Team Collaboration
@@ -154,7 +163,10 @@ Legal-AI-Simplifier/
 ✅ **Report Generation** - Professional download interface  
 ✅ **Responsive Design** - Mobile-optimized layouts  
 ✅ **Loading States** - Skeleton screens and progress indicators  
-✅ **Error Handling** - User-friendly error messages
+✅ **Error Handling** - User-friendly error messages  
+✅ **GitHub Pages Deployment** - Automatic deployment on push to main
+
+**🌐 Live Demo**: https://harshad2321.github.io/Legal-AI-Simplifier
 
 ## 🚧 Known Issues & TODOs
 
@@ -169,12 +181,20 @@ Legal-AI-Simplifier/
 - Add user authentication
 - Enhanced mobile responsiveness
 - Additional animation polish
+- Implement progressive web app (PWA) features
 
 ## 🤝 Team Members
 
-- **Harshad** - Project Lead & Full-Stack Development
+- **Harshad Agrawal** - Project Lead & Full-Stack Development  
+  📧 Email: harshad.agrawal2005@gmail.com
 - **[Your Name]** - Frontend/Backend Developer
 - **[Friend Name]** - UI/UX & Frontend Developer
+
+## 📞 Contact & Support
+
+- **📧 Primary Contact**: harshad.agrawal2005@gmail.com
+- **🐙 GitHub Issues**: [Report bugs or request features](https://github.com/Harshad2321/Legal-AI-Simplifier/issues)
+- **📖 Documentation**: Available in this README and code comments
 
 ## 📝 License
 
@@ -190,12 +210,15 @@ This project demonstrates:
 - **AI integration** for document processing
 - **Responsive design** for all devices
 - **Professional code quality** with proper structure
+- **GitHub Pages deployment** for live demonstration
 
+**🌐 Live Demo**: https://harshad2321.github.io/Legal-AI-Simplifier  
 **Ready to impress judges and win! 🥇**
 
 ---
 
-*Built with ❤️ for the hackathon by Team Legal AI*
+*Built with ❤️ for the hackathon by Team Legal AI*  
+*Contact: harshad.agrawal2005@gmail.com*
 
 ### 🎯 Key Features
 - **📄 Document Upload**: PDF, DOCX, TXT support with drag-and-drop

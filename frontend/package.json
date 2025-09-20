@@ -2,6 +2,7 @@
   "name": "legal-ai-frontend",
   "version": "1.0.0",
   "description": "Legal AI Simplifier - Premium Frontend React Application",
+  "homepage": "https://harshad2321.github.io/Legal-AI-Simplifier",
   "private": true,
   "dependencies": {
     "@radix-ui/react-accordion": "^1.1.2",
@@ -43,7 +44,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "dev": "npm start"
+    "dev": "npm start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -67,6 +70,7 @@
     "@tailwindcss/forms": "^0.5.6",
     "@types/jest": "^29.5.5",
     "autoprefixer": "^10.4.16",
+    "gh-pages": "^6.3.0",
     "postcss": "^8.4.31",
     "tailwindcss": "^3.3.3"
   },
