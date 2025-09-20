@@ -1,34 +1,5 @@
-# FastAPI Core - Essential only
+# Minimal FastAPI setup for Render deployment
 fastapi==0.104.1
 uvicorn[standard]==0.24.0
-python-multipart==0.0.6
-pydantic==2.5.0
 
-# Document Processing - Lightweight
-PyPDF2==3.0.1
-python-docx==1.1.0
-
-# Basic utilities
-aiofiles==23.2.0
-httpx==0.27.0
-
-# Remove heavy dependencies for faster build
-# Google Cloud and AI packages commented out for initial deployment
-# google-cloud-storage==2.10.0
-# google-cloud-firestore==2.13.1
-# google-cloud-aiplatform==1.36.4
-# google-cloud-translate==3.12.1
-# faiss-cpu==1.9.0.post1
-# numpy==1.26.4
-# sentence-transformers==2.7.0
-# python-jose[cryptography]==3.3.0
-# passlib[bcrypt]==1.7.4
-
-# Development
-pytest==7.4.3
-pytest-asyncio==0.21.1
-black==23.11.0
-flake8==6.1.0
-
-# Environment
-python-dotenv==1.0.0
+# That's it! Just the basics to get running
