@@ -33,7 +33,7 @@ jobs:
         npm run build
       env:
         NODE_ENV: production
-        REACT_APP_DEMO_MODE: true
+        REACT_APP_API_BASE_URL: https://legal-ai-backend-58fv.onrender.com
         
     - name: Deploy to GitHub Pages
       if: github.ref == 'refs/heads/main'
