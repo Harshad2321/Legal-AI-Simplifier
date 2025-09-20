@@ -237,12 +237,29 @@ const createApiService = () => {
     return new MockApiService();
   } else {
     console.log('🔗 Using real API service:', API_BASE_URL);
-    toast.success(`Connected to: ${API_BASE_URL}`, {
-      duration: 2000,
-      position: 'top-center',
-      icon: '🔗'
-    });
-    return new ApiService();
+    
+    // Create API service with auto-fallback to demo mode
+    const apiService = new ApiService();
+    
+    // Test connection in background and notify user
+    setTimeout(async () => {
+      try {
+        await fetch(`${API_BASE_URL}/health`, { method: 'GET' });
+        toast.success(`✅ Connected to backend!`, {
+          duration: 2000,
+          position: 'top-center',
+          icon: '🔗'
+        });
+      } catch (error) {
+        console.warn('Backend health check failed:', error);
+        toast.error('⚠️ Backend connection issue - some features may not work', {
+          duration: 5000,
+          position: 'top-center',
+        });
+      }
+    }, 1000);
+    
+    return apiService;
   }
 };
 

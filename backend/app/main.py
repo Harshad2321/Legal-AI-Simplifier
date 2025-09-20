@@ -25,6 +25,16 @@ def root():
 def health():
     return {"status": "healthy", "timestamp": datetime.utcnow().isoformat()}
 
+@app.get("/test-cors")
+def test_cors():
+    """Test endpoint for CORS verification"""
+    return {
+        "cors_test": "success",
+        "message": "CORS is working correctly",
+        "timestamp": datetime.utcnow().isoformat(),
+        "headers_received": "OK"
+    }
+
 @app.post("/api/documents/upload")
 async def upload_document(file: UploadFile = File(...)):
     """Handle document upload and return demo analysis"""
