@@ -1,0 +1,28 @@
+# Root level gitignore
+# Keep Node.js files only in frontend directory
+node_modules/
+package.json
+package-lock.json
+*.log
+.env
+.env.local
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
