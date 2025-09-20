@@ -1,0 +1,10 @@
+# Railway ignore file - ignore frontend and other unnecessary files
+frontend/
+node_modules/
+.git/
+.github/
+sample-documents/
+*.md
+.env*
+.gitignore
+package*.json

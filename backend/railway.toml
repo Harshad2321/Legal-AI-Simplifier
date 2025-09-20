@@ -9,3 +9,4 @@ healthcheckTimeout = 300
 
 [env]
 PYTHON_VERSION = "3.11"
+NIXPACKS_PYTHON_VERSION = "3.11"
