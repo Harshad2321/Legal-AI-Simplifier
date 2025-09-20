@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Legal-AI-Simplifier/static/css/main.68554765.css",
+    "main.js": "/Legal-AI-Simplifier/static/js/main.2f2c62fb.js",
+    "index.html": "/Legal-AI-Simplifier/index.html",
+    "main.68554765.css.map": "/Legal-AI-Simplifier/static/css/main.68554765.css.map",
+    "main.2f2c62fb.js.map": "/Legal-AI-Simplifier/static/js/main.2f2c62fb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.68554765.css",
+    "static/js/main.2f2c62fb.js"
+  ]
+}
