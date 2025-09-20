@@ -1,0 +1,14 @@
+# Railway configuration for backend deployment
+[build]
+builder = "NIXPACKS"
+buildCommand = "cd backend && pip install -r requirements.txt"
+
+[deploy]
+startCommand = "cd backend && uvicorn main:app --host 0.0.0.0 --port $PORT"
+healthcheckPath = "/health"
+healthcheckTimeout = 300
+
+[env]
+PYTHON_VERSION = "3.11"
+NIXPACKS_PYTHON_VERSION = "3.11"
+NIXPACKS_INSTALL_CMD = "cd backend && pip install -r requirements.txt"
