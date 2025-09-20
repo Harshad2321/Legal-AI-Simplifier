@@ -217,7 +217,17 @@ class ApiService {
 
 // Create and export singleton instance with demo mode support
 const createApiService = () => {
-  if (shouldUseDemoMode()) {
+  const apiUrl = process.env.REACT_APP_API_BASE_URL;
+  const useDemoMode = shouldUseDemoMode();
+  
+  console.log('🔧 API Service Configuration:', {
+    apiUrl,
+    nodeEnv: process.env.NODE_ENV,
+    useDemoMode,
+    API_BASE_URL
+  });
+  
+  if (useDemoMode) {
     console.log('🎭 Demo Mode Active - Using mock API service');
     toast.success('Demo Mode: No backend required!', {
       duration: 3000,
@@ -227,6 +237,11 @@ const createApiService = () => {
     return new MockApiService();
   } else {
     console.log('🔗 Using real API service:', API_BASE_URL);
+    toast.success(`Connected to: ${API_BASE_URL}`, {
+      duration: 2000,
+      position: 'top-center',
+      icon: '🔗'
+    });
     return new ApiService();
   }
 };
