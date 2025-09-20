@@ -17,10 +17,8 @@ import {
 import { shouldUseDemoMode } from '../config';
 import { MockApiService } from './mockApi';
 
-const API_BASE_URL = process.env.REACT_APP_API_BASE_URL || 
-  (process.env.NODE_ENV === 'production' 
-    ? 'https://legal-ai-backend-58fv.onrender.com' 
-    : 'http://localhost:8080');
+// EMERGENCY FIX: Force production URL
+const API_BASE_URL = 'https://legal-ai-backend-58fv.onrender.com';
 
 class ApiService {
   private client: AxiosInstance;
