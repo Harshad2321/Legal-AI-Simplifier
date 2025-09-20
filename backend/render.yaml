@@ -4,10 +4,11 @@ services:
     name: legal-ai-backend
     runtime: python
     buildCommand: pip install -r requirements.txt
-    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
     plan: free
     branch: main
     rootDir: backend
+    healthCheckPath: /health
     envVars:
       - key: ENVIRONMENT
         value: production
@@ -15,3 +16,5 @@ services:
         value: false
       - key: ALLOWED_ORIGINS
         value: https://harshad2321.github.io
+      - key: LOG_LEVEL
+        value: info
