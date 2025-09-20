@@ -17,7 +17,10 @@ import {
 import { shouldUseDemoMode } from '../config';
 import { MockApiService } from './mockApi';
 
-const API_BASE_URL = process.env.REACT_APP_API_BASE_URL || 'http://localhost:8080';
+const API_BASE_URL = process.env.REACT_APP_API_BASE_URL || 
+  (process.env.NODE_ENV === 'production' 
+    ? 'https://legal-ai-backend-58fv.onrender.com' 
+    : 'http://localhost:8080');
 
 class ApiService {
   private client: AxiosInstance;
@@ -103,7 +106,7 @@ class ApiService {
     formData.append('file', file);
 
     const response = await this.client.post<DocumentUploadResponse>(
-      '/api/v1/documents/upload',
+      '/api/documents/upload',
       formData,
       {
         headers: {
@@ -116,30 +119,30 @@ class ApiService {
 
   async listDocuments(limit = 50): Promise<{ documents: Document[]; total: number }> {
     const response = await this.client.get<{ documents: Document[]; total: number }>(
-      `/api/v1/documents/list?limit=${limit}`
+      `/api/documents/list?limit=${limit}`
     );
     return response.data;
   }
 
   async getDocument(documentId: string): Promise<Document> {
-    const response = await this.client.get<Document>(`/api/v1/documents/${documentId}`);
+    const response = await this.client.get<Document>(`/api/documents/${documentId}`);
     return response.data;
   }
 
   async deleteDocument(documentId: string): Promise<{ message: string }> {
-    const response = await this.client.delete<{ message: string }>(`/api/v1/documents/${documentId}`);
+    const response = await this.client.delete<{ message: string }>(`/api/documents/${documentId}`);
     return response.data;
   }
 
   async getDocumentStatus(documentId: string): Promise<DocumentStatus> {
-    const response = await this.client.get<DocumentStatus>(`/api/v1/documents/${documentId}/status`);
+    const response = await this.client.get<DocumentStatus>(`/api/documents/${documentId}/status`);
     return response.data;
   }
 
   // Analysis operations
   async summarizeDocument(request: SummaryRequest): Promise<SummaryResponse> {
     const response = await this.client.post<SummaryResponse>(
-      `/api/v1/analysis/${request.document_id}/summarize`,
+      `/api/documents/${request.document_id}/analysis`,
       request
     );
     return response.data;
@@ -147,7 +150,7 @@ class ApiService {
 
   async extractClauses(request: ClausesRequest): Promise<ClausesResponse> {
     const response = await this.client.post<ClausesResponse>(
-      `/api/v1/analysis/${request.document_id}/clauses`,
+      `/api/documents/${request.document_id}/clauses`,
       request
     );
     return response.data;
@@ -155,7 +158,7 @@ class ApiService {
 
   async askQuestion(request: AskRequest): Promise<AskResponse> {
     const response = await this.client.post<AskResponse>(
-      `/api/v1/analysis/${request.document_id}/ask`,
+      `/api/documents/${request.document_id}/ask`,
       request
     );
     return response.data;
@@ -163,7 +166,7 @@ class ApiService {
 
   async getAlerts(request: AlertsRequest): Promise<AlertsResponse> {
     const response = await this.client.post<AlertsResponse>(
-      `/api/v1/analysis/${request.document_id}/alerts`,
+      `/api/documents/${request.document_id}/alerts`,
       request
     );
     return response.data;
