@@ -620,21 +620,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **React** and **FastAPI** communities
 - **Hackathon organizers** for the opportunity
 
-## 📞 Support
-
-### For Hackathon Support
-- **Email**: support@legal-ai-simplifier.com
-- **Discord**: #legal-ai-simplifier
-- **Documentation**: https://docs.legal-ai-simplifier.com
-
-### Quick Links
-- 🌐 **Live Demo**: https://legal-ai-simplifier.vercel.app
-- 📚 **API Docs**: https://api.legal-ai-simplifier.com/docs
-- 🎥 **Demo Video**: https://youtube.com/watch?v=demo
-- 📱 **Mobile App**: Coming soon!
-
 ---
 
-**Built with ❤️ for the Google Cloud AI Hackathon**
+*Built with � for the Google Cloud AI Hackathon by Team Legal AI*  
+*Contact: harshad.agrawal2005@gmail.com*
 
 *⚠️ Disclaimer: This is AI assistance, not legal advice. Always consult with qualified legal professionals for important legal matters.*

@@ -70,7 +70,7 @@ SERVICE_URL=$(gcloud run services describe $SERVICE_NAME --platform managed --re
 echo -e "${GREEN}✅ Deployment completed successfully!${NC}"
 echo -e "${GREEN}🌐 Service URL: ${SERVICE_URL}${NC}"
 echo -e "${GREEN}📋 API Documentation: ${SERVICE_URL}/docs${NC}"
-echo -e "${GREEN}❤️  Health Check: ${SERVICE_URL}/health${NC}"
+echo -e "${GREEN}🔥  Health Check: ${SERVICE_URL}/health${NC}"
 
 # Test the deployment
 echo -e "${YELLOW}🧪 Testing deployment${NC}"
