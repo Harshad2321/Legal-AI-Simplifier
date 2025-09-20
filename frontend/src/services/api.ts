@@ -14,6 +14,8 @@ import {
   DocumentStatus,
   HealthResponse
 } from '../types';
+import { shouldUseDemoMode } from '../config';
+import { MockApiService } from './mockApi';
 
 const API_BASE_URL = process.env.REACT_APP_API_BASE_URL || 'http://localhost:8080';
 
@@ -213,6 +215,21 @@ class ApiService {
   }
 }
 
-// Create and export singleton instance
-export const apiService = new ApiService();
+// Create and export singleton instance with demo mode support
+const createApiService = () => {
+  if (shouldUseDemoMode()) {
+    console.log('🎭 Demo Mode Active - Using mock API service');
+    toast.success('Demo Mode: No backend required!', {
+      duration: 3000,
+      position: 'top-center',
+      icon: '🎭'
+    });
+    return new MockApiService();
+  } else {
+    console.log('🔗 Using real API service:', API_BASE_URL);
+    return new ApiService();
+  }
+};
+
+export const apiService = createApiService();
 export default apiService;

@@ -1,0 +1,31 @@
+EMPLOYMENT AGREEMENT
+
+This Employment Agreement ("Agreement") is entered into as of [DATE], between TechCorp Inc., a Delaware corporation ("Company"), and [EMPLOYEE NAME] ("Employee").
+
+1. POSITION AND DUTIES
+Employee shall serve as Software Engineer and shall perform such duties as may be assigned by the Company. Employee agrees to devote full-time attention to the business of the Company.
+
+2. COMPENSATION
+a) Base Salary: Employee shall receive an annual base salary of $85,000, payable in accordance with Company's regular payroll practices.
+b) Benefits: Employee shall be eligible to participate in Company's benefit plans as they may exist from time to time.
+
+3. TERMINATION
+Either party may terminate this Agreement at any time, with or without cause, upon thirty (30) days written notice.
+
+4. CONFIDENTIALITY
+Employee acknowledges that during employment, Employee may have access to certain confidential information of the Company. Employee agrees to maintain the confidentiality of such information.
+
+5. NON-COMPETE
+During employment and for a period of twelve (12) months after termination, Employee shall not engage in any business that competes with the Company within a 50-mile radius of Company's headquarters.
+
+6. GOVERNING LAW
+This Agreement shall be governed by the laws of the State of Delaware.
+
+IN WITNESS WHEREOF, the parties have executed this Agreement as of the date first written above.
+
+COMPANY:                           EMPLOYEE:
+TechCorp Inc.
+
+By: _____________________          _____________________
+Name: John Smith                   [EMPLOYEE NAME]
+Title: CEO

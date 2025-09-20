@@ -1,0 +1,57 @@
+TERMS OF SERVICE
+
+Effective Date: [DATE]
+
+1. ACCEPTANCE OF TERMS
+By accessing or using our service, you agree to be bound by these Terms of Service ("Terms"). If you disagree with any part of these terms, you may not access the service.
+
+2. DESCRIPTION OF SERVICE
+Our platform provides legal document analysis and simplification services using artificial intelligence technology.
+
+3. USER ACCOUNTS
+You must create an account to use certain features. You are responsible for:
+- Maintaining the confidentiality of your account credentials
+- All activities that occur under your account
+- Notifying us immediately of any unauthorized use
+
+4. ACCEPTABLE USE
+You agree NOT to:
+- Use the service for any unlawful purpose
+- Upload malicious content or viruses
+- Attempt to gain unauthorized access to our systems
+- Interfere with or disrupt the service
+- Violate any applicable laws or regulations
+
+5. INTELLECTUAL PROPERTY
+- Our service and its content are protected by copyright and other intellectual property laws
+- You retain ownership of content you upload
+- You grant us a license to process your content to provide our services
+
+6. PRIVACY
+Your privacy is important to us. Please review our Privacy Policy, which also governs your use of the service.
+
+7. DISCLAIMERS
+THE SERVICE IS PROVIDED "AS IS" WITHOUT WARRANTIES OF ANY KIND. WE DO NOT GUARANTEE:
+- Uninterrupted or error-free operation
+- Accuracy of analysis results
+- That the service will meet your requirements
+
+8. LIMITATION OF LIABILITY
+TO THE MAXIMUM EXTENT PERMITTED BY LAW, WE SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, OR CONSEQUENTIAL DAMAGES.
+
+9. INDEMNIFICATION
+You agree to indemnify and hold us harmless from any claims, damages, or expenses arising from your use of the service or violation of these Terms.
+
+10. TERMINATION
+We may terminate or suspend your account and access to the service at our sole discretion, without prior notice, for any breach of these Terms.
+
+11. GOVERNING LAW
+These Terms shall be governed by and construed in accordance with the laws of [STATE/COUNTRY].
+
+12. CHANGES TO TERMS
+We reserve the right to modify these Terms at any time. We will provide notice of material changes.
+
+13. CONTACT INFORMATION
+For questions about these Terms, contact us at:
+Email: legal@example.com
+Address: 789 Legal Ave, Terms City, TC 54321

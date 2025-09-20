@@ -14,6 +14,7 @@ import { Button } from '../components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../components/ui/card'
 import { Progress } from '../components/ui/progress'
 import { Badge } from '../components/ui/badge'
+import { ThemeToggle } from '../components/theme-toggle'
 import { useAppStore } from '../store'
 import { formatBytes, getFileIcon } from '../lib/utils'
 
@@ -107,18 +108,21 @@ const UploadPage: React.FC = () => {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50">
+    <div className="min-h-screen bg-gradient-to-br from-background via-muted/50 to-background">
       <div className="container mx-auto px-4 py-12">
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="text-center mb-12"
+          className="text-center mb-12 relative"
         >
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">
+          <div className="absolute top-0 right-0">
+            <ThemeToggle />
+          </div>
+          <h1 className="text-4xl font-bold text-foreground mb-4">
             Upload Legal Documents
           </h1>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Drag and drop your legal documents to get instant AI-powered analysis, 
             summaries, and risk assessments.
           </p>

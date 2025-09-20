@@ -29,7 +29,11 @@ jobs:
     - name: Build project
       run: |
         cd frontend
+        cp .env.production .env
         npm run build
+      env:
+        NODE_ENV: production
+        REACT_APP_DEMO_MODE: true
         
     - name: Deploy to GitHub Pages
       if: github.ref == 'refs/heads/main'
