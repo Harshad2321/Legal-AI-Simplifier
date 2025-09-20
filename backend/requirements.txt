@@ -15,7 +15,7 @@ google-cloud-translate==3.12.1
 PyPDF2==3.0.1
 python-docx==1.1.0
 python-magic==0.4.27
-python-magic-bin==0.4.14  # For Windows
+# python-magic-bin==0.4.14  # Windows only - removed for Linux deployment
 
 # Vector & AI
 faiss-cpu==1.7.4
