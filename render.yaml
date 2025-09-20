@@ -1,0 +1,21 @@
+# Render.com deployment configuration
+# This file enables one-click deployment to Render
+
+services:
+  - type: web
+    name: legal-ai-backend
+    runtime: python
+    plan: free
+    branch: main
+    rootDir: backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: ENVIRONMENT
+        value: production
+      - key: DEBUG
+        value: false
+      - key: ALLOWED_ORIGINS
+        value: https://harshad2321.github.io
+      - key: PYTHON_VERSION
+        value: 3.11.0

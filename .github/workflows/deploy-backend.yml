@@ -1,0 +1,35 @@
+name: Deploy Backend to Heroku
+
+on:
+  push:
+    branches: [ main ]
+    paths: [ 'backend/**' ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+      
+    - name: Setup Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+        
+    - name: Test Backend
+      run: |
+        cd backend
+        pip install -r requirements.txt
+        python -c "import main; print('Backend imports successfully')"
+        
+    - name: Deploy to Heroku
+      uses: akhileshns/heroku-deploy@v3.12.14
+      with:
+        heroku_api_key: ${{ secrets.HEROKU_API_KEY }}
+        heroku_app_name: "legal-ai-simplifier-backend"
+        heroku_email: "your-email@example.com"
+        appdir: "backend"
+        usedocker: false
+        procfile: "web: uvicorn main:app --host 0.0.0.0 --port $PORT"
