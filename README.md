@@ -1,6 +1,19 @@
-# 🚀 Legal AI Simplifier - Hackathon Project
+# 🚀 Legal AI Simplifier - Google Cloud AI Hackathon
 
-> **Premium $100M startup-quality legal document analysis platform**
+<div align="center">
+
+### 💼 Premium $100M startup-quality legal document analysis platform
+
+**🔥 Built by Team Legal AI for Google Cloud AI Hackathon 🔥**
+
+[![Live Demo](https://img.shields.io/badge/🌐_Live_Demo-GitHub_Pages-blue?style=for-the-badge)](https://harshad2321.github.io/Legal-AI-Simplifier)
+[![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://reactjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+
+</div>
+
+---
 
 Transform complex legal documents into clear, actionable insights with our AI-powered platform. Built for the hackathon with enterprise-grade design and functionality.
 
@@ -185,10 +198,18 @@ Legal-AI-Simplifier/
 
 ## 🤝 Team Members
 
-- **Harshad Agrawal** - Project Lead & Full-Stack Development  
-  📧 Email: harshad.agrawal2005@gmail.com
-- **[Your Name]** - Frontend/Backend Developer
-- **[Friend Name]** - UI/UX & Frontend Developer
+<div align="center">
+
+### 🚀 **Team Legal AI** - Equal Contributors
+
+| 👨‍💻 **Harshad Agrawal** | 👨‍💻 **Parth** | 👨‍💻 **Krish** |
+|:---:|:---:|:---:|
+| Full-Stack Dev & AI Integration | Full-Stack Dev & UI/UX Design | Full-Stack Dev & Backend Architecture |
+| 📧 harshad.agrawal2005@gmail.com | 📧 *[Email coming soon]* | 📧 *[Email coming soon]* |
+
+</div>
+
+*🤝 All team members contributed equally to this project - from ideation to deployment!*
 
 ## 📞 Contact & Support
 
@@ -217,7 +238,7 @@ This project demonstrates:
 
 ---
 
-*Built with ❤️ for the hackathon by Team Legal AI*  
+*Built with 🔥 for the Google Cloud AI Hackathon by Team Legal AI*  
 *Contact: harshad.agrawal2005@gmail.com*
 
 ### 🎯 Key Features

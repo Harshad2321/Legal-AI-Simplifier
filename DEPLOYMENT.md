@@ -120,4 +120,5 @@ The live site is fully responsive and optimized for:
 ---
 
 **📧 Support**: harshad.agrawal2005@gmail.com  
-**🐙 Repository**: https://github.com/Harshad2321/Legal-AI-Simplifier
+**🐙 Repository**: https://github.com/Harshad2321/Legal-AI-Simplifier  
+**👥 Team**: Harshad, Parth & Krish - Built with 🔥 for Google Cloud AI Hackathon
