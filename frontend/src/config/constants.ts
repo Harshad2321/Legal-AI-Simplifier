@@ -1,24 +1,25 @@
-// API configuration and base URL
-export const API_BASE_URL = process.env.REACT_APP_API_BASE_URL || 'http://localhost:8080';
-export const API_VERSION = 'v1';
+// API configuration - PRODUCTION ONLY (Render backend)
+export const API_BASE_URL = 'https://legal-ai-backend-58fv.onrender.com';
+export const API_VERSION = ''; // No version prefix needed
 
-// API endpoints
+// API endpoints - Updated for Render backend
 export const ENDPOINTS = {
   // Document endpoints
-  UPLOAD_DOCUMENT: `/api/${API_VERSION}/documents/upload`,
-  LIST_DOCUMENTS: `/api/${API_VERSION}/documents/list`,
-  GET_DOCUMENT: (id: string) => `/api/${API_VERSION}/documents/${id}`,
-  DELETE_DOCUMENT: (id: string) => `/api/${API_VERSION}/documents/${id}`,
-  DOCUMENT_STATUS: (id: string) => `/api/${API_VERSION}/documents/${id}/status`,
+  UPLOAD_DOCUMENT: `/api/documents/upload`,
+  LIST_DOCUMENTS: `/api/documents/list`,
+  GET_DOCUMENT: (id: string) => `/api/documents/${id}`,
+  DELETE_DOCUMENT: (id: string) => `/api/documents/${id}`,
+  DOCUMENT_STATUS: (id: string) => `/api/documents/${id}/status`,
   
   // Analysis endpoints
-  SUMMARIZE: (id: string) => `/api/${API_VERSION}/analysis/${id}/summarize`,
-  CLAUSES: (id: string) => `/api/${API_VERSION}/analysis/${id}/clauses`,
-  ASK_QUESTION: (id: string) => `/api/${API_VERSION}/analysis/${id}/ask`,
-  ALERTS: (id: string) => `/api/${API_VERSION}/analysis/${id}/alerts`,
+  SUMMARIZE: (id: string) => `/api/analysis/${id}/summarize`,
+  CLAUSES: (id: string) => `/api/analysis/${id}/clauses`,
+  SIMPLIFY: (id: string) => `/api/analysis/${id}/simplify`,
+  ASK_QUESTION: (id: string) => `/api/analysis/${id}/question`,
+  ALERTS: (id: string) => `/api/analysis/${id}/alerts`,
   
   // Health check
-  HEALTH: '/health',
+  HEALTH: `/api/health`,
 };
 
 // File upload constraints
