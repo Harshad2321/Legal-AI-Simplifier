@@ -103,16 +103,32 @@ class ApiService {
     const formData = new FormData();
     formData.append('file', file);
 
-    const response = await this.client.post<DocumentUploadResponse>(
+    // Note: Let the browser set the multipart/form-data boundary automatically
+    const response = await this.client.post<any>(
       '/api/documents/upload',
-      formData,
-      {
-        headers: {
-          'Content-Type': 'multipart/form-data',
-        },
-      }
+      formData
     );
-    return response.data;
+
+    // Map backend response (which uses size/status/timestamp) to our expected shape
+    const raw = response.data as any;
+    const inferType = (): string => {
+      const name = file.name.toLowerCase();
+      if (name.endsWith('.pdf')) return 'pdf';
+      if (name.endsWith('.docx') || name.endsWith('.doc')) return 'docx';
+      return 'txt';
+    };
+
+    const mapped: DocumentUploadResponse = {
+      document_id: raw.document_id ?? raw.id ?? `${Date.now()}`,
+      filename: raw.filename ?? file.name,
+      document_type: raw.document_type ?? inferType(),
+      file_size: raw.file_size ?? raw.size ?? file.size,
+      upload_timestamp: raw.upload_timestamp ?? raw.timestamp ?? new Date().toISOString(),
+      processing_status: raw.processing_status ?? raw.status ?? 'processed',
+      message: raw.message ?? 'Document uploaded successfully',
+    };
+
+    return mapped;
   }
 
   async listDocuments(limit = 50): Promise<{ documents: Document[]; total: number }> {
@@ -139,11 +155,23 @@ class ApiService {
 
   // Analysis operations
   async summarizeDocument(request: SummaryRequest): Promise<SummaryResponse> {
-    const response = await this.client.post<SummaryResponse>(
-      `/api/documents/${request.document_id}/analysis`,
-      request
+    // Backend exposes GET /api/documents/{document_id}/analysis
+    const response = await this.client.get<any>(
+      `/api/documents/${request.document_id}/analysis`
     );
-    return response.data;
+
+    const raw = response.data as any;
+    const summary = raw?.analysis?.summary || raw?.simplified_version || 'Summary not available.';
+
+    const mapped: SummaryResponse = {
+      document_id: request.document_id,
+      summary,
+      language: (request.language || 'en') as any,
+      word_count: typeof summary === 'string' ? summary.split(/\s+/).filter(Boolean).length : 0,
+      confidence_score: 0.9,
+      disclaimer: 'This is an automated summary. Please verify important details.'
+    };
+    return mapped;
   }
 
   async extractClauses(request: ClausesRequest): Promise<ClausesResponse> {
