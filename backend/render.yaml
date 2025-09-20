@@ -15,6 +15,6 @@ services:
       - key: DEBUG
         value: false
       - key: ALLOWED_ORIGINS
-        value: https://harshad2321.github.io
+        value: https://harshad2321.github.io,https://legal-ai-backend-58fv.onrender.com
       - key: LOG_LEVEL
         value: info
