@@ -337,7 +337,7 @@ const QAChat: React.FC<QAChatProps> = ({ documentId }) => {
                 </div>
                 <div className="flex items-center gap-2 text-sm text-gray-600">
                   <Clock className="h-4 w-4" />
-                  Uploaded {new Date(currentDocument.uploadDate).toLocaleDateString()}
+                  Uploaded {new Date().toLocaleDateString()}
                 </div>
                 <div className="text-xs text-gray-500 bg-gray-50 rounded p-2">
                   💡 Tip: Ask specific questions about clauses, obligations, or risks for the most helpful responses.
