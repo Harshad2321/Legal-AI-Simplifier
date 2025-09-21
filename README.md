@@ -202,10 +202,10 @@ Legal-AI-Simplifier/
 
 ### 🚀 **Team Legal AI** - Equal Contributors
 
-| 👨‍💻 **Harshad Agrawal** | 👨‍💻 **Parth** | 👨‍💻 **Krish** |
+| 👨‍💻 **Harshad Agrawal** | 👨‍💻 **Parth Kosthi** | 👨‍💻 **Krrish Talesara** |
 |:---:|:---:|:---:|
 | Full-Stack Dev & AI Integration | Full-Stack Dev & UI/UX Design | Full-Stack Dev & Backend Architecture |
-| 📧 harshad.agrawal2005@gmail.com | 📧 *[Email coming soon]* | 📧 *[Email coming soon]* |
+| 📧 harshad.agrawal2005@gmail.com | 📧 * parth.kosthi.btech2024@sitpune.edu.in* | 📧 * krrish.talesara.btech2024@sitpune.edu.in* |
 
 </div>
 
