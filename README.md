@@ -205,7 +205,7 @@ Legal-AI-Simplifier/
 | 👨‍💻 **Harshad Agrawal** | 👨‍💻 **Parth Kosthi** | 👨‍💻 **Krrish Talesara** |
 |:---:|:---:|:---:|
 | Full-Stack Dev & AI Integration | Full-Stack Dev & UI/UX Design | Full-Stack Dev & Backend Architecture |
-| 📧 harshad.agrawal2005@gmail.com | 📧 * parth.kosthi.btech2024@sitpune.edu.in* | 📧 * krrish.talesara.btech2024@sitpune.edu.in* |
+| 📧 harshad.agrawal2005@gmail.com | 📧  parth.kosthi.btech2024@sitpune.edu.in | 📧  krrish.talesara.btech2024@sitpune.edu.in |
 
 </div>
 
