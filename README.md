@@ -2,7 +2,7 @@
 
 <div align="center">
 
-### 💼 Premium $100M startup-quality legal document analysis platform
+### 💼  legal document analysis platform
 
 **🔥 Built by Team Legal AI for Google Cloud AI Hackathon 🔥**
 
