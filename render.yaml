@@ -1,6 +1,3 @@
-# Render.com deployment configuration
-# Optimized for Legal AI Simplifier backend
-
 services:
   - type: web
     name: legal-ai-backend

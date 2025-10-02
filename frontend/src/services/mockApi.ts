@@ -57,7 +57,7 @@ export class MockApiService {
   }
 
   async uploadDocument(file: File): Promise<DocumentUploadResponse> {
-    // Simulate upload delay
+
     await new Promise(resolve => setTimeout(resolve, 2000));
     
     const newDoc: Document = {
@@ -73,7 +73,7 @@ export class MockApiService {
 
     this.documents.push(newDoc);
 
-    // Simulate processing
+
     setTimeout(() => {
       const doc = this.documents.find(d => d.document_id === newDoc.document_id);
       if (doc) {
@@ -144,7 +144,7 @@ export class MockApiService {
     maxAttempts = 30,
     interval = 2000
   ): Promise<Document> {
-    // In demo mode, just return the document after a short delay
+
     await new Promise(resolve => setTimeout(resolve, 1000));
     return this.getDocument(documentId);
   }
@@ -206,7 +206,7 @@ export class MockApiService {
   async askQuestion(request: AskRequest): Promise<AskResponse> {
     await new Promise(resolve => setTimeout(resolve, 1200));
     
-    // Generate contextual responses based on question keywords
+
     let answer = 'This is a demo response. ';
     
     if (request.question.toLowerCase().includes('termination')) {

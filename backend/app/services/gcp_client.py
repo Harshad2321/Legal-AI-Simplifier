@@ -39,20 +39,20 @@ class GCPClient:
             return
         
         try:
-            # Initialize Vertex AI
+
             vertexai.init(project=settings.google_cloud_project_id, location="us-central1")
             
-            # Initialize storage client
+
             self.storage_client = storage.Client(project=settings.google_cloud_project_id)
             self.bucket = self.storage_client.bucket(settings.google_cloud_storage_bucket)
             
-            # Initialize Firestore client
+
             self.firestore_client = firestore.AsyncClient(project=settings.google_cloud_project_id)
             
-            # Initialize Translate client
+
             self.translate_client = translate.Client()
             
-            # Initialize AI models
+
             self.text_model = TextGenerationModel.from_pretrained("text-bison@001")
             self.embedding_model = TextEmbeddingModel.from_pretrained("textembedding-gecko@001")
             
@@ -69,14 +69,14 @@ class GCPClient:
             self.firestore_client.close()
         self._initialized = False
     
-    # Storage Operations
+
     async def upload_file(self, file_content: bytes, filename: str, content_type: str) -> str:
         """Upload file to Google Cloud Storage"""
         try:
             blob_name = f"documents/{datetime.utcnow().strftime('%Y/%m/%d')}/{filename}"
             blob = self.bucket.blob(blob_name)
             
-            # Upload file in a thread to avoid blocking
+
             await asyncio.get_event_loop().run_in_executor(
                 None,
                 lambda: blob.upload_from_string(file_content, content_type=content_type)
@@ -115,7 +115,7 @@ class GCPClient:
             logger.error(f"Failed to delete file {blob_name}: {e}")
             return False
     
-    # Firestore Operations
+
     async def save_document_metadata(self, document_id: str, metadata: Dict[str, Any]) -> bool:
         """Save document metadata to Firestore"""
         try:
@@ -176,7 +176,7 @@ class GCPClient:
             logger.error(f"Failed to list documents: {e}")
             return []
     
-    # AI Operations
+
     async def generate_text(self, prompt: str, max_output_tokens: int = 1024, temperature: float = 0.2) -> str:
         """Generate text using Vertex AI PaLM model"""
         try:
@@ -198,7 +198,7 @@ class GCPClient:
         """Generate embeddings using Vertex AI"""
         try:
             embeddings = []
-            # Process in batches to avoid rate limits
+
             batch_size = 5
             
             for i in range(0, len(texts), batch_size):
@@ -230,13 +230,13 @@ class GCPClient:
             
         except Exception as e:
             logger.error(f"Failed to translate text: {e}")
-            return text  # Return original text if translation fails
+            return text
     
-    # Health Check Methods
+
     async def test_firestore_connection(self) -> bool:
         """Test Firestore connection"""
         try:
-            # Try to read from a test collection
+
             test_ref = self.firestore_client.collection("health_check").document("test")
             await test_ref.get()
             return True
@@ -246,7 +246,7 @@ class GCPClient:
     async def test_gcs_connection(self) -> bool:
         """Test Google Cloud Storage connection"""
         try:
-            # Try to list objects in bucket (with limit 1)
+
             blobs = list(self.bucket.list_blobs(max_results=1))
             return True
         except Exception:
@@ -255,7 +255,7 @@ class GCPClient:
     async def test_vertex_ai_connection(self) -> bool:
         """Test Vertex AI connection"""
         try:
-            # Try a simple text generation
+
             await self.generate_text("Hello", max_output_tokens=10)
             return True
         except Exception:

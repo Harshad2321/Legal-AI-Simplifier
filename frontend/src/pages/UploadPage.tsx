@@ -35,7 +35,7 @@ const UploadPage: React.FC = () => {
   const onDrop = useCallback((acceptedFiles: File[]) => {
     const validFiles = acceptedFiles.filter(file => {
       const isValidType = ['application/pdf', 'application/msword', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document', 'text/plain'].includes(file.type)
-      const isValidSize = file.size <= 10 * 1024 * 1024 // 10MB
+      const isValidSize = file.size <= 10 * 1024 * 1024
       return isValidType && isValidSize
     })
     
@@ -100,7 +100,7 @@ const UploadPage: React.FC = () => {
       }
     }
 
-    // Clear selected files after upload
+
     setTimeout(() => {
       setSelectedFiles([])
       setUploadedFiles([])
@@ -110,7 +110,7 @@ const UploadPage: React.FC = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-background via-muted/50 to-background">
       <div className="container mx-auto px-4 py-12">
-        {/* Header */}
+
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -128,7 +128,7 @@ const UploadPage: React.FC = () => {
           </p>
         </motion.div>
 
-        {/* Upload Area */}
+
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -174,7 +174,7 @@ const UploadPage: React.FC = () => {
             </div>
           </Card>
 
-          {/* Selected Files */}
+
           <AnimatePresence>
             {selectedFiles.length > 0 && (
               <motion.div

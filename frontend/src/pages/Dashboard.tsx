@@ -43,7 +43,7 @@ const Dashboard: React.FC<DashboardProps> = ({ documentId }) => {
 
   useEffect(() => {
     if (currentDocument && documentId === currentDocument.document_id) {
-      // Simulate analysis progress
+
       const interval = setInterval(() => {
         setAnalysisProgress(prev => {
           if (prev >= 100) {
@@ -55,7 +55,7 @@ const Dashboard: React.FC<DashboardProps> = ({ documentId }) => {
         })
       }, 300)
 
-      // Load analysis data
+
       generateSummary(currentDocument.document_id)
       extractClauses(currentDocument.document_id)
       fetchAlerts(currentDocument.document_id)
@@ -92,7 +92,7 @@ const Dashboard: React.FC<DashboardProps> = ({ documentId }) => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50">
       <div className="container mx-auto px-4 py-8">
-        {/* Header */}
+
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -116,7 +116,7 @@ const Dashboard: React.FC<DashboardProps> = ({ documentId }) => {
           </div>
         </motion.div>
 
-        {/* Analysis Progress */}
+
         <AnimatePresence>
           {analysisProgress < 100 && (
             <motion.div
@@ -149,7 +149,7 @@ const Dashboard: React.FC<DashboardProps> = ({ documentId }) => {
           )}
         </AnimatePresence>
 
-        {/* Key Metrics */}
+
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -225,9 +225,9 @@ const Dashboard: React.FC<DashboardProps> = ({ documentId }) => {
           </Card>
         </motion.div>
 
-        {/* Main Content Grid */}
+
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          {/* Document Summary */}
+
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
@@ -275,7 +275,7 @@ const Dashboard: React.FC<DashboardProps> = ({ documentId }) => {
             </Card>
           </motion.div>
 
-          {/* Risk Analysis */}
+
           <motion.div
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
@@ -355,7 +355,7 @@ const Dashboard: React.FC<DashboardProps> = ({ documentId }) => {
           </motion.div>
         </div>
 
-        {/* Recent Alerts */}
+
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -407,7 +407,7 @@ const Dashboard: React.FC<DashboardProps> = ({ documentId }) => {
           </Card>
         </motion.div>
 
-        {/* AI Disclaimer */}
+
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -419,7 +419,7 @@ const Dashboard: React.FC<DashboardProps> = ({ documentId }) => {
               <div className="flex items-center gap-2 text-yellow-800">
                 <AlertTriangle className="h-5 w-5" />
                 <p className="text-sm font-medium">
-                  ⚠️ This is AI assistance, not legal advice. Please consult with a qualified legal professional for important decisions.
+                  This is AI assistance, not legal advice. Please consult with a qualified legal professional for important decisions.
                 </p>
               </div>
             </CardContent>

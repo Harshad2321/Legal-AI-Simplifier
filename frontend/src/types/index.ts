@@ -1,4 +1,4 @@
-// Type definitions for the Legal AI Simplifier application
+
 
 export interface Document {
   document_id: string;
@@ -124,7 +124,7 @@ export interface ErrorResponse {
   request_id?: string;
 }
 
-// UI State interfaces
+
 export interface UploadState {
   isUploading: boolean;
   progress: number;
@@ -149,7 +149,7 @@ export interface ChatMessage {
   relevant_sections?: string[];
 }
 
-// Component props interfaces
+
 export interface FileUploadProps {
   onUpload: (file: File) => void;
   isUploading?: boolean;

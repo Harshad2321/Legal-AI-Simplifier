@@ -1,4 +1,4 @@
-# Legal AI Simplifier - GenAI Exchange Hackathon
+﻿# Legal AI Simplifier - GenAI Exchange Hackathon
 
 <div align="center">
 
@@ -39,43 +39,43 @@ Transform complex legal documents into clear, actionable insights with our AI-po
 
 ### Problem Statement Alignment
 Our solution addresses the critical need for accessible legal information by:
-- **Automating complex legal document analysis** using AI
-- **Reducing barriers** to legal understanding for general public
-- **Providing actionable insights** from legal contracts and agreements
-- **Democratizing access** to legal expertise through AI-powered assistance
+- **analysis** using AI
+- **barriers** to legal understanding for general public
+- **insights** from legal contracts and agreements
+- **access** to legal expertise through AI-powered assistance
 
 ### Google Cloud AI Integration
-- **Gemini API** - Advanced natural language processing for legal text analysis
-- **Vertex AI** - Machine learning models for risk assessment and clause classification
-- **Cloud Run** - Scalable backend deployment for document processing
+- **API** - Advanced natural language processing for legal text analysis
+- **AI** - Machine learning models for risk assessment and clause classification
+- **Run** - Scalable backend deployment for document processing
 - **Firebase** - Real-time data synchronization and user management
 - **BigQuery** - Data analytics for legal document insights
 
 ### Innovation Highlights
-- **AI-Powered Document Understanding** - Context-aware legal text processing
-- **Interactive Risk Visualization** - Color-coded risk indicators with detailed explanations
-- **Real-time Q&A Interface** - Conversational AI for document-specific questions
-- **Professional Report Generation** - Automated legal analysis summaries
-- **Responsive Modern UI** - Enterprise-grade user experience design
+- **Understanding** - Context-aware legal text processing
+- **Visualization** - Color-coded risk indicators with detailed explanations
+- **Interface** - Conversational AI for document-specific questions
+- **Generation** - Automated legal analysis summaries
+- **UI** - Enterprise-grade user experience design
 
 ## Features
 
-### 🎯 Core Capabilities
-- **� Document Analysis** - Advanced AI-powered legal document processing
-- **⚖️ Risk Assessment** - Intelligent clause risk evaluation with color-coded indicators  
-- **�📋 Clause Explorer** - Interactive expandable interface for document navigation
-- **💬 Q&A Assistant** - Modern chat interface with AI legal expert
-- **📊 Visual Dashboard** - Beautiful animated metrics and data visualization
-- **📄 Report Generation** - Professional downloadable analysis reports
+### Core Capabilities
+- **Document Analysis** - Advanced AI-powered legal document processing
+- **Risk Assessment** - Intelligent clause risk evaluation with color-coded indicators  
+- **Clause Explorer** - Interactive expandable interface for document navigation
+- **Q&A Assistant** - Modern chat interface with AI legal expert
+- **Visual Dashboard** - Beautiful animated metrics and data visualization
+- **Report Generation** - Professional downloadable analysis reports
 
-### 🎨 Premium UI/UX
+### Premium UI/UX
 - **Drag & Drop Upload** - Smooth file upload with real-time progress
 - **Responsive Design** - Mobile-first approach with TailwindCSS
 - **Smooth Animations** - Framer Motion micro-interactions
 - **Glass Morphism** - Modern premium visual effects
 - **shadcn/ui Components** - Consistent, accessible design system
 
-## 🛠 Tech Stack
+## Tech Stack
 
 ### Frontend
 - **React 18** + **TypeScript** - Modern component architecture
@@ -90,16 +90,16 @@ Our solution addresses the critical need for accessible legal information by:
 - **Google Cloud Platform** - Document AI + Vertex AI integration
 - **PostgreSQL** - Robust data persistence
 - **Docker** - Containerized deployment
-- **Cloud Run** - Serverless scaling
+- **Run** - Serverless scaling
 
 ## Quick Start for Team
 
 ### Prerequisites
-- **Node.js 18+** and **npm**
-- **Python 3.9+** and **pip**
+- **18+** and **npm**
+- **3.9+** and **pip**
 - **Git** for version control
 
-### 1. Clone & Setup
+### Clone & Setup
 ```bash
 # Clone the repository
 git clone https://github.com/Harshad2321/Legal-AI-Simplifier
@@ -114,7 +114,7 @@ cd ../backend
 pip install -r requirements.txt
 ```
 
-### 2. Environment Configuration
+### Environment Configuration
 ```bash
 # Backend environment
 cd backend
@@ -125,7 +125,7 @@ cp .env.example .env
 python -m uvicorn app.main:app --reload --port 8080
 ```
 
-### 3. Start Development
+### Start Development
 ```bash
 # Start frontend (in new terminal)
 cd frontend
@@ -133,7 +133,7 @@ npm start
 # Opens at http://localhost:3000
 ```
 
-### 4. Deploy to GitHub Pages
+### Deploy to GitHub Pages
 ```bash
 # Build and deploy to GitHub Pages
 cd frontend
@@ -153,47 +153,47 @@ npm run deploy
 
 ### Code Standards
 - **TypeScript** - Strict typing for reliability
-- **ESLint + Prettier** - Consistent code formatting
+- **Prettier** - Consistent code formatting
 - **Component-driven** - Reusable UI components
 - **Mobile-first** - Responsive design approach
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 Legal-AI-Simplifier/
-├── frontend/                 # React TypeScript app
-│   ├── src/
-│   │   ├── components/       # Reusable UI components  
-│   │   ├── pages/           # Main application pages
-│   │   ├── services/        # API integration layer
-│   │   ├── store/           # Zustand state management
-│   │   └── types/           # TypeScript definitions
-│   └── public/              # Static assets
-│
-├── backend/                  # FastAPI Python server
-│   ├── app/
-│   │   ├── routers/         # API endpoint definitions
-│   │   ├── services/        # Business logic layer
-│   │   └── schemas.py       # Data models
-│   └── requirements.txt     # Python dependencies
-│
-└── README.md                # This file
+ frontend/                 # React TypeScript app
+    src/
+       components/       # Reusable UI components  
+       pages/           # Main application pages
+       services/        # API integration layer
+       store/           # Zustand state management
+       types/           # TypeScript definitions
+    public/              # Static assets
+
+ backend/                  # FastAPI Python server
+    app/
+       routers/         # API endpoint definitions
+       services/        # Business logic layer
+       schemas.py       # Data models
+    requirements.txt     # Python dependencies
+
+ README.md                # This file
 ```
 
 ## Pages & Components
 
 ### Main Pages
-- **🏠 Upload Page** - Drag-and-drop file upload with progress
-- **📊 Dashboard** - Animated metrics and document overview  
-- **🔍 Clause Explorer** - Interactive document navigation
-- **💬 Q&A Chat** - AI assistant conversation interface
-- **📄 Report Download** - Customizable report generation
+- **Page** - Drag-and-drop file upload with progress
+- ** Dashboard** - Animated metrics and document overview  
+- **Explorer** - Interactive document navigation
+- **Chat** - AI assistant conversation interface
+- **Download** - Customizable report generation
 
 ### Key Components
-- **shadcn/ui Library** - Button, Card, Input, Progress, Badge, Accordion
-- **Loading States** - Skeleton screens and spinners
-- **Risk Indicators** - Color-coded risk level badges
-- **Responsive Layout** - Mobile-optimized grid system
+- **Library** - Button, Card, Input, Progress, Badge, Accordion
+- **States** - Skeleton screens and spinners
+- **Indicators** - Color-coded risk level badges
+- **Layout** - Mobile-optimized grid system
 
 ## API Endpoints
 
@@ -210,19 +210,19 @@ Legal-AI-Simplifier/
 
 ## Demo Ready Features
 
-- **Premium File Upload** - Smooth drag-and-drop with animations  
-- **Animated Dashboard** - Beautiful cards with hover effects  
-- **Clause Explorer** - Expandable accordion interface  
-- **Modern Chat UI** - Typing indicators and message animations  
-- **Report Generation** - Professional download interface  
-- **Responsive Design** - Mobile-optimized layouts  
-- **Loading States** - Skeleton screens and progress indicators  
-- **Error Handling** - User-friendly error messages  
-- **GitHub Pages Deployment** - Automatic deployment on push to main
+- **Upload** - Smooth drag-and-drop with animations  
+- **Dashboard** - Beautiful cards with hover effects  
+- **Explorer** - Expandable accordion interface  
+- **UI** - Typing indicators and message animations  
+- **Generation** - Professional download interface  
+- **Design** - Mobile-optimized layouts  
+- **States** - Skeleton screens and progress indicators  
+- **Handling** - User-friendly error messages  
+- **Deployment** - Automatic deployment on push to main
 
-**🌐 Live Demo**: https://harshad2321.github.io/Legal-AI-Simplifier
+** Live Demo**: https://harshad2321.github.io/Legal-AI-Simplifier
 
-## 🚧 Known Issues & TODOs
+##  Known Issues & TODOs
 
 ### Minor TypeScript Fixes Needed
 - Property name alignment in Document interface
@@ -237,88 +237,88 @@ Legal-AI-Simplifier/
 - Additional animation polish
 - Implement progressive web app (PWA) features
 
-## 🤝 Team Members
+##  Team Members
 
 <div align="center">
 
-### 🚀 **Team Legal AI** - Equal Contributors
+###  **Team Legal AI** - Equal Contributors
 
 | **Harshad Agrawal** | **Parth Kosthi** | **Krrish Talesara** |
 |:---:|:---:|:---:|
 | Full-Stack Dev & AI Integration | Full-Stack Dev & UI/UX Design | Full-Stack Dev & Backend Architecture |
-| 📧 harshad.agrawal2005@gmail.com | 📧  parth.kosthi.btech2024@sitpune.edu.in | 📧  krrish.talesara.btech2024@sitpune.edu.in |
+|  harshad.agrawal2005@gmail.com |   parth.kosthi.btech2024@sitpune.edu.in |   krrish.talesara.btech2024@sitpune.edu.in |
 
 </div>
 
-*🤝 All team members contributed equally to this project - from ideation to deployment!*
+* All team members contributed equally to this project - from ideation to deployment!*
 
-## 📞 Contact & Support
+##  Contact & Support
 
-- **📧 Primary Contact**: harshad.agrawal2005@gmail.com
-- **🐙 GitHub Issues**: [Report bugs or request features](https://github.com/Harshad2321/Legal-AI-Simplifier/issues)
-- **📖 Documentation**: Available in this README and code comments
+- **Contact**: harshad.agrawal2005@gmail.com
+- **Issues**: [Report bugs or request features](https://github.com/Harshad2321/Legal-AI-Simplifier/issues)
+- ** Documentation**: Available in this README and code comments
 
-## 📝 License
+##  License
 
 Built for hackathon - Open source for educational purposes.
 
 ---
 
-## 🏆 Hackathon Ready!
+##  Hackathon Ready!
 
 This project demonstrates:
-- **Enterprise-grade UI/UX** that rivals top startups
-- **Modern full-stack architecture** with TypeScript
-- **AI integration** for document processing
-- **Responsive design** for all devices
-- **Professional code quality** with proper structure
-- **GitHub Pages deployment** for live demonstration
+- **UI/UX** that rivals top startups
+- **architecture** with TypeScript
+- **integration** for document processing
+- **design** for all devices
+- **quality** with proper structure
+- **deployment** for live demonstration
 
-**🌐 Live Demo**: https://harshad2321.github.io/Legal-AI-Simplifier  
-**Ready to impress judges and win! 🥇**
+** Live Demo**: https://harshad2321.github.io/Legal-AI-Simplifier  
+**Ready to impress judges and win! **
 
 ---
 
-*Built with 🔥 for the Google Cloud AI Hackathon by Team Legal AI*  
+*Built with  for the Google Cloud AI Hackathon by Team Legal AI*  
 *Contact: harshad.agrawal2005@gmail.com*
 
-### 🎯 Key Features
-- **📄 Document Upload**: PDF, DOCX, TXT support with drag-and-drop
-- **🤖 AI-Powered Analysis**: Summary, clause extraction, risk assessment
-- **🌐 Multi-language Support**: English, Hindi, Spanish, French summaries
-- **💬 Interactive Q&A**: Ask questions about your documents
-- **⚠️ Risk Alerts**: Automated detection of risky clauses
-- **📊 Visual Dashboard**: Beautiful, intuitive interface
+###  Key Features
+- **Upload**: PDF, DOCX, TXT support with drag-and-drop
+- **Analysis**: Summary, clause extraction, risk assessment
+- **Support**: English, Hindi, Spanish, French summaries
+- **Q&A**: Ask questions about your documents
+- **Alerts**: Automated detection of risky clauses
+- **Dashboard**: Beautiful, intuitive interface
 
-### 🏗️ Architecture
+###  Architecture
 ```
-┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-│   React Frontend │◄──►│  FastAPI Backend │◄──►│  Google Cloud   │
-│   (TypeScript)   │    │   (Python)      │    │    Services     │
-└─────────────────┘    └─────────────────┘    └─────────────────┘
-       │                         │                         │
-   ┌───▼───┐              ┌─────▼─────┐            ┌─────▼─────┐
-   │Tailwind│              │   FAISS   │            │ Vertex AI │
-   │   CSS  │              │ Vector DB │            │Cloud Store│
-   └───────┘              └───────────┘            │ Firestore │
-                                                   └───────────┘
+        
+   React Frontend   FastAPI Backend   Google Cloud   
+   (TypeScript)          (Python)              Services     
+        
+                                                         
+                             
+   Tailwind                 FAISS                Vertex AI 
+      CSS                 Vector DB             Cloud Store
+                              Firestore 
+                                                   
 ```
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Prerequisites
 - **Node.js** 18+ and **npm**
 - **Python** 3.11+
-- **Google Cloud Account** with billing enabled
+- **Account** with billing enabled
 - **Docker** (optional, for containerized deployment)
 
-### 1. Clone the Repository
+### Clone the Repository
 ```bash
 git clone https://github.com/Harshad2321/Legal-AI-Simplifier.git
 cd Legal-AI-Simplifier
 ```
 
-### 2. Backend Setup
+### Backend Setup
 ```bash
 cd backend
 
@@ -337,7 +337,7 @@ cp .env.example .env
 uvicorn app.main:app --reload --host 0.0.0.0 --port 8080
 ```
 
-### 3. Frontend Setup
+### Frontend Setup
 ```bash
 cd frontend
 
@@ -348,7 +348,7 @@ npm install
 npm start
 ```
 
-### 4. Google Cloud Setup
+### Google Cloud Setup
 ```bash
 # Install Google Cloud CLI
 # https://cloud.google.com/sdk/docs/install
@@ -370,42 +370,42 @@ gcloud services enable translate.googleapis.com
 gsutil mb gs://legal-ai-documents-YOUR_PROJECT_ID
 ```
 
-## 🛠️ Development
+##  Development
 
 ### Backend Structure
 ```
 backend/
-├── app/
-│   ├── main.py              # FastAPI application
-│   ├── config.py            # Configuration management
-│   ├── schemas.py           # Pydantic models
-│   ├── routers/
-│   │   ├── documents.py     # Document management
-│   │   └── analysis.py      # AI analysis endpoints
-│   └── services/
-│       ├── gcp_client.py    # Google Cloud integration
-│       ├── document_processor.py  # Text processing
-│       └── vector_store.py  # FAISS vector operations
-├── requirements.txt         # Python dependencies
-├── Dockerfile              # Container configuration
-└── deploy.sh               # Cloud Run deployment
+ app/
+    main.py              # FastAPI application
+    config.py            # Configuration management
+    schemas.py           # Pydantic models
+    routers/
+       documents.py     # Document management
+       analysis.py      # AI analysis endpoints
+    services/
+        gcp_client.py    # Google Cloud integration
+        document_processor.py  # Text processing
+        vector_store.py  # FAISS vector operations
+ requirements.txt         # Python dependencies
+ Dockerfile              # Container configuration
+ deploy.sh               # Cloud Run deployment
 ```
 
 ### Frontend Structure
 ```
 frontend/
-├── src/
-│   ├── components/          # Reusable UI components
-│   ├── pages/              # Main application pages
-│   ├── services/           # API integration
-│   ├── types/              # TypeScript type definitions
-│   ├── config/             # Configuration constants
-│   └── App.tsx             # Main application component
-├── package.json            # Node.js dependencies
-└── tailwind.config.js      # Tailwind CSS configuration
+ src/
+    components/          # Reusable UI components
+    pages/              # Main application pages
+    services/           # API integration
+    types/              # TypeScript type definitions
+    config/             # Configuration constants
+    App.tsx             # Main application component
+ package.json            # Node.js dependencies
+ tailwind.config.js      # Tailwind CSS configuration
 ```
 
-## 📡 API Endpoints
+##  API Endpoints
 
 ### Document Management
 - `POST /api/v1/documents/upload` - Upload document
@@ -442,7 +442,7 @@ const summary = await fetch(`/api/v1/analysis/${documentId}/summarize`, {
 });
 ```
 
-## 🎪 Demo Script
+##  Demo Script
 
 ### For Hackathon Judges
 1. **Upload Demo**: Drag & drop a legal contract (PDF/DOCX)
@@ -497,7 +497,7 @@ REACT_APP_API_BASE_URL=https://your-backend-url.com
 REACT_APP_DEMO_MODE=false
 ```
 
-## 🧪 Testing
+##  Testing
 
 ### Backend Tests
 ```bash
@@ -520,7 +520,7 @@ npm test
 4. Verify API responses
 ```
 
-## 🎨 Customization
+##  Customization
 
 ### Adding New Risk Patterns
 Edit `backend/app/services/document_processor.py`:
@@ -591,34 +591,34 @@ node --version  # Should be 18+
 2. Check API enablement: `gcloud services list --enabled`
 3. Verify service account permissions
 
-## 📊 Performance Optimization
+##  Performance Optimization
 
 ### Backend
-- **Async processing**: Document analysis runs in background
-- **Vector caching**: FAISS index persisted to disk
-- **Connection pooling**: Reuse GCP client connections
-- **Memory management**: Chunked processing for large documents
+- **processing**: Document analysis runs in background
+- **caching**: FAISS index persisted to disk
+- **pooling**: Reuse GCP client connections
+- **management**: Chunked processing for large documents
 
 ### Frontend
-- **Code splitting**: React.lazy() for route-based splitting
-- **Image optimization**: WebP format with fallbacks
+- **splitting**: React.lazy() for route-based splitting
+- **optimization**: WebP format with fallbacks
 - **Caching**: Service worker for offline functionality
-- **Bundle analysis**: webpack-bundle-analyzer for optimization
+- **analysis**: webpack-bundle-analyzer for optimization
 
-## 🔒 Security
+##  Security
 
 ### Backend Security
-- **Input validation**: Pydantic schemas for all endpoints
-- **File type validation**: MIME type checking
-- **Size limits**: 10MB max file size
-- **Error handling**: No sensitive information in error messages
+- **validation**: Pydantic schemas for all endpoints
+- **validation**: MIME type checking
+- **limits**: 10MB max file size
+- **handling**: No sensitive information in error messages
 
 ### Frontend Security
-- **XSS protection**: React's built-in sanitization
-- **CSRF protection**: CORS configuration
-- **Environment variables**: No secrets in client-side code
+- **protection**: React's built-in sanitization
+- **protection**: CORS configuration
+- **variables**: No secrets in client-side code
 
-## 📈 Monitoring
+##  Monitoring
 
 ### Health Checks
 - Backend: `GET /health`
@@ -635,7 +635,7 @@ tail -f logs/app.log
 console.log('User action:', action);
 ```
 
-## 🤝 Contributing
+##  Contributing
 
 ### Development Workflow
 1. Fork the repository
@@ -653,36 +653,36 @@ console.log('User action:', action);
 ## Hackathon Submission Checklist
 
 ### Completed Requirements
-- ✅ **Functional Prototype** - Working demo with full AI capabilities
-- ✅ **Google Cloud Integration** - Backend deployed on Cloud Run with AI services
-- ✅ **Live Demo** - [https://harshad2321.github.io/Legal-AI-Simplifier](https://harshad2321.github.io/Legal-AI-Simplifier)
-- ✅ **Source Code** - Public GitHub repository with clean, documented code
-- ✅ **Comprehensive Documentation** - Detailed README with setup instructions
-- ✅ **Real-world Impact** - Addresses genuine legal accessibility challenges
-- ✅ **Scalable Architecture** - Enterprise-ready design patterns
+-  **Functional Prototype** - Working demo with full AI capabilities
+-  **Google Cloud Integration** - Backend deployed on Cloud Run with AI services
+-  **Live Demo** - [https://harshad2321.github.io/Legal-AI-Simplifier](https://harshad2321.github.io/Legal-AI-Simplifier)
+-  **Source Code** - Public GitHub repository with clean, documented code
+-  **Comprehensive Documentation** - Detailed README with setup instructions
+-  **Real-world Impact** - Addresses genuine legal accessibility challenges
+-  **Scalable Architecture** - Enterprise-ready design patterns
 
 ### Technical Implementation
 - **Frontend**: React 18 + TypeScript + TailwindCSS
 - **Backend**: Python FastAPI + Google Cloud AI
 - **Database**: Cloud Firestore for document storage
-- **AI Services**: Gemini API + Vertex AI for document processing
+- **Services**: Gemini API + Vertex AI for document processing
 - **Deployment**: Cloud Run (Backend) + GitHub Pages (Frontend)
 
 ### Demo Video
-📹 **3-Minute Demo Video**: [Coming Soon]
+ **3-Minute Demo Video**: [Coming Soon]
 - Live demonstration of document upload and analysis
 - AI-powered clause extraction and risk assessment
 - Interactive Q&A with legal documents
 - Report generation and download functionality
 
-## 📄 License
+##  License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 Acknowledgments
+##  Acknowledgments
 
-- **Google Cloud** for AI and infrastructure services
-- **GenAI Exchange Hackathon** for the platform and opportunity
+- **Cloud** for AI and infrastructure services
+- **Hackathon** for the platform and opportunity
 - **React** and **FastAPI** communities for excellent frameworks
 - **shadcn/ui** for beautiful component library
 
@@ -696,3 +696,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 **Repository:** [https://github.com/Harshad2321/Legal-AI-Simplifier](https://github.com/Harshad2321/Legal-AI-Simplifier)
 
 *Disclaimer: This is AI assistance, not legal advice. Always consult with qualified legal professionals for important legal matters.*
+

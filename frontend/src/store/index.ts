@@ -4,11 +4,11 @@ import { Document, Clause, Alert } from '../types'
 import apiService from '../services/api'
 
 interface AppState {
-  // Documents
+
   documents: Document[]
   currentDocument: Document | null
   
-  // Analysis data
+
   summary: string | null
   clauses: Clause[]
   alerts: Alert[]
@@ -19,13 +19,13 @@ interface AppState {
     timestamp: string
   }>
   
-  // UI state
+
   isLoading: boolean
   uploadProgress: number
   error: string | null
   successMessage: string | null
   
-  // Actions
+
   setCurrentDocument: (document: Document | null) => void
   setDocuments: (documents: Document[]) => void
   addDocument: (document: Document) => void
@@ -57,7 +57,7 @@ interface AppState {
 export const useAppStore = create<AppState>()(
   devtools(
     (set, get) => ({
-      // Initial state
+
       documents: [],
       currentDocument: null,
       summary: null,
@@ -69,7 +69,7 @@ export const useAppStore = create<AppState>()(
       error: null,
       successMessage: null,
 
-      // Sync actions
+
       setCurrentDocument: (document) => set({ currentDocument: document }),
       setDocuments: (documents) => set({ documents }),
       addDocument: (document) => 
@@ -112,7 +112,7 @@ export const useAppStore = create<AppState>()(
       clearError: () => set({ error: null }),
       clearMessages: () => set({ error: null, successMessage: null }),
 
-      // Async actions
+
       uploadDocument: async (file: File) => {
         try {
           set({ isLoading: true, uploadProgress: 0, error: null })

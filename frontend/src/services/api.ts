@@ -185,7 +185,7 @@ class ApiService {
     return response.data;
   }
 
-  // Polling for document processing status
+
   async pollDocumentStatus(
     documentId: string,
     onStatusUpdate?: (status: DocumentStatus) => void,
@@ -219,7 +219,7 @@ class ApiService {
             return;
           }
 
-          // Continue polling
+
           setTimeout(poll, interval);
         } catch (error) {
           reject(error);

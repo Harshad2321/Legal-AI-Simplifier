@@ -76,7 +76,7 @@ const QAChat: React.FC<QAChatProps> = ({ documentId }) => {
     setIsTyping(true)
 
     try {
-      // Simulate API call
+
       await new Promise(resolve => setTimeout(resolve, 1500))
       
       const aiResponse: Message = {
@@ -151,7 +151,7 @@ const QAChat: React.FC<QAChatProps> = ({ documentId }) => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50">
       <div className="container mx-auto px-4 py-8">
-        {/* Header */}
+
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -176,7 +176,7 @@ const QAChat: React.FC<QAChatProps> = ({ documentId }) => {
         </motion.div>
 
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
-          {/* Chat Area */}
+
           <div className="lg:col-span-3">
             <Card className="h-[600px] flex flex-col">
               <CardHeader className="pb-4">
@@ -187,7 +187,7 @@ const QAChat: React.FC<QAChatProps> = ({ documentId }) => {
               </CardHeader>
               
               <CardContent className="flex-1 flex flex-col p-0">
-                {/* Messages */}
+
                 <div className="flex-1 overflow-y-auto p-4 space-y-4">
                   <AnimatePresence>
                     {messages.map((message) => (
@@ -200,7 +200,7 @@ const QAChat: React.FC<QAChatProps> = ({ documentId }) => {
                       >
                         <div className={`max-w-[80%] ${message.type === 'user' ? 'order-2' : 'order-1'}`}>
                           <div className={`flex items-start gap-3 ${message.type === 'user' ? 'flex-row-reverse' : 'flex-row'}`}>
-                            {/* Avatar */}
+
                             <div className={`flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center ${
                               message.type === 'user' 
                                 ? 'bg-blue-500 text-white' 
@@ -209,7 +209,7 @@ const QAChat: React.FC<QAChatProps> = ({ documentId }) => {
                               {message.type === 'user' ? <User className="h-4 w-4" /> : <Bot className="h-4 w-4" />}
                             </div>
                             
-                            {/* Message Content */}
+
                             <div className={`rounded-2xl px-4 py-3 max-w-md ${
                               message.type === 'user'
                                 ? 'bg-blue-500 text-white ml-2'
@@ -217,7 +217,7 @@ const QAChat: React.FC<QAChatProps> = ({ documentId }) => {
                             }`}>
                               <p className="text-sm leading-relaxed">{message.content}</p>
                               
-                              {/* AI Message Footer */}
+
                               {message.type === 'ai' && (
                                 <div className="mt-3 pt-3 border-t border-gray-100 space-y-2">
                                   {message.confidence && (
@@ -236,7 +236,7 @@ const QAChat: React.FC<QAChatProps> = ({ documentId }) => {
                             </div>
                           </div>
                           
-                          {/* Timestamp */}
+
                           <div className={`mt-1 text-xs text-gray-500 ${message.type === 'user' ? 'text-right' : 'text-left'}`}>
                             {message.timestamp.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
                           </div>
@@ -245,7 +245,7 @@ const QAChat: React.FC<QAChatProps> = ({ documentId }) => {
                     ))}
                   </AnimatePresence>
                   
-                  {/* Typing Indicator */}
+
                   {isTyping && (
                     <motion.div
                       initial={{ opacity: 0, y: 20 }}
@@ -273,7 +273,7 @@ const QAChat: React.FC<QAChatProps> = ({ documentId }) => {
                   <div ref={messagesEndRef} />
                 </div>
                 
-                {/* Input Area */}
+
                 <div className="border-t border-gray-200 p-4">
                   <div className="flex gap-2">
                     <Input
@@ -302,9 +302,9 @@ const QAChat: React.FC<QAChatProps> = ({ documentId }) => {
             </Card>
           </div>
           
-          {/* Sidebar */}
+
           <div className="space-y-6">
-            {/* Suggested Questions */}
+
             <Card>
               <CardHeader>
                 <CardTitle className="text-lg">Suggested Questions</CardTitle>
@@ -325,7 +325,7 @@ const QAChat: React.FC<QAChatProps> = ({ documentId }) => {
               </CardContent>
             </Card>
             
-            {/* Document Info */}
+
             <Card>
               <CardHeader>
                 <CardTitle className="text-lg">Document Info</CardTitle>
@@ -345,7 +345,7 @@ const QAChat: React.FC<QAChatProps> = ({ documentId }) => {
               </CardContent>
             </Card>
             
-            {/* AI Capabilities */}
+
             <Card>
               <CardHeader>
                 <CardTitle className="text-lg">AI Capabilities</CardTitle>
@@ -374,7 +374,7 @@ const QAChat: React.FC<QAChatProps> = ({ documentId }) => {
           </div>
         </div>
         
-        {/* AI Disclaimer */}
+
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -386,7 +386,7 @@ const QAChat: React.FC<QAChatProps> = ({ documentId }) => {
               <div className="flex items-center gap-2 text-yellow-800">
                 <AlertCircle className="h-5 w-5" />
                 <p className="text-sm">
-                  ⚠️ AI responses are for informational purposes only. Always consult with a qualified legal professional for important decisions.
+                  AI responses are for informational purposes only. Always consult with a qualified legal professional for important decisions.
                 </p>
               </div>
             </CardContent>

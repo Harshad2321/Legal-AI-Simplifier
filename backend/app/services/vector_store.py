@@ -29,20 +29,20 @@ class VectorStore:
         self.index_file = "data/vector_index.faiss"
         self.metadata_file = "data/vector_metadata.pkl"
         
-        # Ensure data directory exists
+
         os.makedirs("data", exist_ok=True)
         
-        # Initialize FAISS index
+
         self._initialize_index()
     
     def _initialize_index(self):
         """Initialize FAISS index"""
         try:
-            # Load existing index if available
+
             if os.path.exists(self.index_file) and os.path.exists(self.metadata_file):
                 self.load_index()
             else:
-                # Create new index - using L2 distance for better performance
+
                 self.index = faiss.IndexFlatL2(self.dimension)
                 logger.info(f"Created new FAISS index with dimension {self.dimension}")
         except Exception as e:
