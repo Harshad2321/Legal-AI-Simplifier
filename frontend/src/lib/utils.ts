@@ -95,16 +95,16 @@ export function getFileIcon(filename: string): string {
   
   switch (extension) {
     case 'pdf':
-      return '📄'
+      return 'PDF'
     case 'doc':
     case 'docx':
-      return '📝'
+      return 'DOC'
     case 'txt':
-      return '📃'
+      return 'TXT'
     case 'rtf':
-      return '📋'
+      return 'RTF'
     default:
-      return '📄'
+      return 'FILE'
   }
 }
 

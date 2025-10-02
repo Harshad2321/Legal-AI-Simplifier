@@ -17,7 +17,6 @@ import {
 import { shouldUseDemoMode } from '../config';
 import { MockApiService } from './mockApi';
 
-// EMERGENCY FIX: Force production URL
 const API_BASE_URL = 'https://legal-ai-backend-58fv.onrender.com';
 
 class ApiService {
@@ -26,32 +25,26 @@ class ApiService {
   constructor() {
     this.client = axios.create({
       baseURL: API_BASE_URL,
-      timeout: 30000, // 30 seconds
+      timeout: 30000,
       headers: {
         'Content-Type': 'application/json',
       },
     });
 
-    // Request interceptor
     this.client.interceptors.request.use(
       (config) => {
-        console.log(`API Request: ${config.method?.toUpperCase()} ${config.url}`);
         return config;
       },
       (error) => {
-        console.error('API Request Error:', error);
         return Promise.reject(error);
       }
     );
 
-    // Response interceptor
     this.client.interceptors.response.use(
       (response: AxiosResponse) => {
-        console.log(`API Response: ${response.status} ${response.config.url}`);
         return response;
       },
       (error: AxiosError) => {
-        console.error('API Response Error:', error);
         this.handleError(error);
         return Promise.reject(error);
       }
@@ -60,7 +53,7 @@ class ApiService {
 
   private handleError(error: AxiosError) {
     if (error.response) {
-      // Server responded with error status
+
       const status = error.response.status;
       const message = (error.response.data as any)?.message || error.message;
 
@@ -84,32 +77,28 @@ class ApiService {
           toast.error(`Error: ${message}`);
       }
     } else if (error.request) {
-      // Network error
       toast.error('Network error. Please check your connection.');
     } else {
-      // Other error
       toast.error('An unexpected error occurred.');
     }
   }
 
-  // Health check
   async checkHealth(): Promise<HealthResponse> {
     const response = await this.client.get<HealthResponse>('/health');
     return response.data;
   }
 
-  // Document operations
   async uploadDocument(file: File): Promise<DocumentUploadResponse> {
     const formData = new FormData();
     formData.append('file', file);
 
-    // Note: Let the browser set the multipart/form-data boundary automatically
+
     const response = await this.client.post<any>(
       '/api/documents/upload',
       formData
     );
 
-    // Map backend response (which uses size/status/timestamp) to our expected shape
+
     const raw = response.data as any;
     const inferType = (): string => {
       const name = file.name.toLowerCase();
@@ -153,9 +142,7 @@ class ApiService {
     return response.data;
   }
 
-  // Analysis operations
   async summarizeDocument(request: SummaryRequest): Promise<SummaryResponse> {
-    // Backend exposes GET /api/documents/{document_id}/analysis
     const response = await this.client.get<any>(
       `/api/documents/${request.document_id}/analysis`
     );
@@ -244,44 +231,32 @@ class ApiService {
   }
 }
 
-// Create and export singleton instance with demo mode support
 const createApiService = () => {
   const apiUrl = process.env.REACT_APP_API_BASE_URL;
   const useDemoMode = shouldUseDemoMode();
   
-  console.log('🔧 API Service Configuration:', {
-    apiUrl,
-    nodeEnv: process.env.NODE_ENV,
-    useDemoMode,
-    API_BASE_URL
-  });
+
   
   if (useDemoMode) {
-    console.log('🎭 Demo Mode Active - Using mock API service');
     toast.success('Demo Mode: No backend required!', {
       duration: 3000,
-      position: 'top-center',
-      icon: '🎭'
+      position: 'top-center'
     });
     return new MockApiService();
   } else {
-    console.log('🔗 Using real API service:', API_BASE_URL);
-    
-    // Create API service with auto-fallback to demo mode
+
     const apiService = new ApiService();
     
-    // Test connection in background and notify user
+
     setTimeout(async () => {
       try {
         await fetch(`${API_BASE_URL}/health`, { method: 'GET' });
-        toast.success(`✅ Connected to backend!`, {
+        toast.success('Connected to backend!', {
           duration: 2000,
-          position: 'top-center',
-          icon: '🔗'
+          position: 'top-center'
         });
       } catch (error) {
-        console.warn('Backend health check failed:', error);
-        toast.error('⚠️ Backend connection issue - some features may not work', {
+        toast.error('Backend connection issue - some features may not work', {
           duration: 5000,
           position: 'top-center',
         });

@@ -340,7 +340,7 @@ const QAChat: React.FC<QAChatProps> = ({ documentId }) => {
                   Uploaded {new Date().toLocaleDateString()}
                 </div>
                 <div className="text-xs text-gray-500 bg-gray-50 rounded p-2">
-                  💡 Tip: Ask specific questions about clauses, obligations, or risks for the most helpful responses.
+                  Tip: Ask specific questions about clauses, obligations, or risks for the most helpful responses.
                 </div>
               </CardContent>
             </Card>

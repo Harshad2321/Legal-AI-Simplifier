@@ -14,7 +14,6 @@ import {
   RiskLevel
 } from '../types';
 
-// Mock responses for demo mode
 const mockDocuments: Document[] = [
   {
     document_id: 'demo-1',

@@ -202,7 +202,7 @@ const Dashboard: React.FC<DashboardProps> = ({ documentId }) => {
                 </div>
               </div>
               <div className="mt-2">
-                <span className="text-sm text-yellow-600 font-medium">⚡ Attention</span>
+                <span className="text-sm text-yellow-600 font-medium">Attention</span>
               </div>
             </CardContent>
           </Card>

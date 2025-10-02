@@ -1,12 +1,12 @@
-# 🚀 Legal AI Simplifier - Google Cloud AI Hackathon
+# Legal AI Simplifier - Google Cloud AI Hackathon
 
 <div align="center">
 
-### 💼  legal document analysis platform
+### Legal document analysis platform
 
-**🔥 Built by Team Legal AI for Google Cloud AI Hackathon 🔥**
+**Built by Team Legal AI for Google Cloud AI Hackathon**
 
-[![Live Demo](https://img.shields.io/badge/🌐_Live_Demo-GitHub_Pages-blue?style=for-the-badge)](https://harshad2321.github.io/Legal-AI-Simplifier)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-GitHub_Pages-blue?style=for-the-badge)](https://harshad2321.github.io/Legal-AI-Simplifier)
 [![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://reactjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
@@ -17,7 +17,7 @@
 
 Transform complex legal documents into clear, actionable insights with our AI-powered platform. Built for the hackathon with enterprise-grade design and functionality.
 
-## ✨ Features
+## Features
 
 ### 🎯 Core Capabilities
 - **� Document Analysis** - Advanced AI-powered legal document processing
@@ -51,7 +51,7 @@ Transform complex legal documents into clear, actionable insights with our AI-po
 - **Docker** - Containerized deployment
 - **Cloud Run** - Serverless scaling
 
-## 🚀 Quick Start for Team
+## Quick Start for Team
 
 ### Prerequisites
 - **Node.js 18+** and **npm**
@@ -101,12 +101,12 @@ npm run deploy
 
 **Live Demo**: https://harshad2321.github.io/Legal-AI-Simplifier
 
-## 🎯 Development Workflow
+## Development Workflow
 
 ### Team Collaboration
 1. **Create feature branch**: `git checkout -b feature/your-feature-name`
 2. **Make changes** and test locally
-3. **Commit with description**: `git commit -m "✨ Add feature description"`
+3. **Commit with description**: `git commit -m "Add feature description"`
 4. **Push branch**: `git push origin feature/your-feature-name`
 5. **Create Pull Request** for team review
 
@@ -139,7 +139,7 @@ Legal-AI-Simplifier/
 └── README.md                # This file
 ```
 
-## 🎨 Pages & Components
+## Pages & Components
 
 ### Main Pages
 - **🏠 Upload Page** - Drag-and-drop file upload with progress
@@ -154,7 +154,7 @@ Legal-AI-Simplifier/
 - **Risk Indicators** - Color-coded risk level badges
 - **Responsive Layout** - Mobile-optimized grid system
 
-## 🔧 API Endpoints
+## API Endpoints
 
 ### Document Management
 - `POST /api/documents/upload` - File upload processing
@@ -167,17 +167,17 @@ Legal-AI-Simplifier/
 - `POST /api/analysis/generate-summary` - Document summary
 - `POST /api/analysis/ask-question` - Q&A functionality
 
-## 🎯 Demo Ready Features
+## Demo Ready Features
 
-✅ **Premium File Upload** - Smooth drag-and-drop with animations  
-✅ **Animated Dashboard** - Beautiful cards with hover effects  
-✅ **Clause Explorer** - Expandable accordion interface  
-✅ **Modern Chat UI** - Typing indicators and message animations  
-✅ **Report Generation** - Professional download interface  
-✅ **Responsive Design** - Mobile-optimized layouts  
-✅ **Loading States** - Skeleton screens and progress indicators  
-✅ **Error Handling** - User-friendly error messages  
-✅ **GitHub Pages Deployment** - Automatic deployment on push to main
+- **Premium File Upload** - Smooth drag-and-drop with animations  
+- **Animated Dashboard** - Beautiful cards with hover effects  
+- **Clause Explorer** - Expandable accordion interface  
+- **Modern Chat UI** - Typing indicators and message animations  
+- **Report Generation** - Professional download interface  
+- **Responsive Design** - Mobile-optimized layouts  
+- **Loading States** - Skeleton screens and progress indicators  
+- **Error Handling** - User-friendly error messages  
+- **GitHub Pages Deployment** - Automatic deployment on push to main
 
 **🌐 Live Demo**: https://harshad2321.github.io/Legal-AI-Simplifier
 
@@ -202,7 +202,7 @@ Legal-AI-Simplifier/
 
 ### 🚀 **Team Legal AI** - Equal Contributors
 
-| 👨‍💻 **Harshad Agrawal** | 👨‍💻 **Parth Kosthi** | 👨‍💻 **Krrish Talesara** |
+| **Harshad Agrawal** | **Parth Kosthi** | **Krrish Talesara** |
 |:---:|:---:|:---:|
 | Full-Stack Dev & AI Integration | Full-Stack Dev & UI/UX Design | Full-Stack Dev & Backend Architecture |
 | 📧 harshad.agrawal2005@gmail.com | 📧  parth.kosthi.btech2024@sitpune.edu.in | 📧  krrish.talesara.btech2024@sitpune.edu.in |
@@ -417,7 +417,7 @@ const summary = await fetch(`/api/v1/analysis/${documentId}/summarize`, {
 - "What are my financial obligations?"
 - "Are there any unusual clauses I should worry about?"
 
-## 🚢 Production Deployment
+## Production Deployment
 
 ### Cloud Run (Recommended)
 ```bash
@@ -514,7 +514,7 @@ module.exports = {
 }
 ```
 
-## 🔧 Troubleshooting
+## Troubleshooting
 
 ### Common Issues
 

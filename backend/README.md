@@ -1,6 +1,6 @@
 # Legal AI Simplifier - Backend API
 
-## 🎯 Overview
+## Overview
 
 A powerful FastAPI backend that uses Google Cloud AI to demystify legal documents. Upload any legal document (PDF, DOCX, TXT) and get:
 
@@ -10,7 +10,7 @@ A powerful FastAPI backend that uses Google Cloud AI to demystify legal document
 - **Interactive Q&A** about your document
 - **Smart search** using AI embeddings
 
-## 🚀 Quick Start
+## Quick Start
 
 ### 1. Prerequisites
 
@@ -112,7 +112,7 @@ backend/
 └── README.md                # This file
 ```
 
-## 🔗 API Endpoints
+## API Endpoints
 
 ### Document Management
 
@@ -170,7 +170,7 @@ Content-Type: application/json
   "language": "en",
   "word_count": 247,
   "confidence_score": 0.89,
-  "disclaimer": "⚠️ Disclaimer: This is AI assistance, not legal advice."
+  "disclaimer": "⚠️Disclaimer: This is AI assistance, not legal advice."
 }
 ```
 
@@ -201,7 +201,7 @@ Content-Type: application/json
     }
   ],
   "total_clauses": 15,
-  "disclaimer": "⚠️ Disclaimer: This is AI assistance, not legal advice."
+  "disclaimer": "⚠️Disclaimer: This is AI assistance, not legal advice."
 }
 ```
 
@@ -225,7 +225,7 @@ Content-Type: application/json
   "answer": "According to the contract, early termination results in...",
   "confidence_score": 0.92,
   "relevant_sections": ["Section 5.2 discusses termination...", "..."],
-  "disclaimer": "⚠️ Disclaimer: This is AI assistance, not legal advice."
+  "disclaimer": "⚠️Disclaimer: This is AI assistance, not legal advice."
 }
 ```
 
@@ -262,7 +262,7 @@ Content-Type: application/json
     "medium": 5,
     "low": 1
   },
-  "disclaimer": "⚠️ Disclaimer: This is AI assistance, not legal advice."
+  "disclaimer": "⚠️Disclaimer: This is AI assistance, not legal advice."
 }
 ```
 
@@ -295,7 +295,7 @@ FAISS Index → Similarity Search → AI Analysis → Response
 - **Cloud Translate**: Multi-language support
 - **Cloud Run**: Scalable deployment
 
-## 🔧 Configuration
+## Configuration
 
 ### Environment Variables
 
@@ -321,7 +321,7 @@ The system uses predefined patterns to detect risky clauses:
 - **Medium**: Mandatory arbitration, governing law, confidentiality
 - **Low**: Standard clauses with minimal risk
 
-## 🚀 Deployment
+## Deployment
 
 ### Local Development
 ```bash
@@ -375,7 +375,7 @@ Place test documents in `test_documents/`:
 - `terms_of_service.docx`
 - `privacy_policy.txt`
 
-## 📊 Performance & Scaling
+## Performance & Scaling
 
 ### Optimization Features
 - **Background Processing**: Document analysis runs asynchronously
@@ -510,11 +510,11 @@ const useDocumentAnalysis = (documentId) => {
 - Prepare backup responses for network issues
 - Cache common questions and answers
 
-## 📝 License
+## License
 
 MIT License - Feel free to use this for your hackathon and beyond!
 
-## 🆘 Support
+## Support
 
 For hackathon support or questions:
 - Check the `/docs` endpoint for interactive API documentation
@@ -525,4 +525,4 @@ For hackathon support or questions:
 
 ---
 
-**⚠️ Important Disclaimer**: This tool provides AI-powered assistance for understanding legal documents but does not constitute legal advice. Always consult with qualified legal professionals for important legal matters.
+**Important Disclaimer**: This tool provides AI-powered assistance for understanding legal documents but does not constitute legal advice. Always consult with qualified legal professionals for important legal matters.
