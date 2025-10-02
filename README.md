@@ -1,21 +1,62 @@
-# Legal AI Simplifier - Google Cloud AI Hackathon
+# Legal AI Simplifier - GenAI Exchange Hackathon
 
 <div align="center">
 
-### Legal document analysis platform
+### AI-Powered Legal Document Analysis Platform
 
-**Built by Team Legal AI for Google Cloud AI Hackathon**
+**Submission for GenAI Exchange Hackathon by Google Cloud**
 
 [![Live Demo](https://img.shields.io/badge/Live_Demo-GitHub_Pages-blue?style=for-the-badge)](https://harshad2321.github.io/Legal-AI-Simplifier)
+[![Hackathon](https://img.shields.io/badge/GenAI_Exchange-Hackathon-orange?style=for-the-badge)](https://vision.hack2skill.com/event/genaiexchangehackathon/)
 [![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://reactjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+[![Google Cloud](https://img.shields.io/badge/Google_Cloud-AI_Tools-red?style=for-the-badge&logo=googlecloud)](https://cloud.google.com/)
 
 </div>
 
 ---
 
-Transform complex legal documents into clear, actionable insights with our AI-powered platform. Built for the hackathon with enterprise-grade design and functionality.
+## Hackathon Project Overview
+
+**Problem Statement:** Legal documents are complex and inaccessible to the general public, creating barriers to understanding rights, obligations, and risks.
+
+**Our Solution:** An AI-powered platform that transforms complex legal documents into clear, actionable insights using Google Cloud AI technologies.
+
+**Impact:** Democratizing access to legal information and empowering individuals to make informed decisions.
+
+---
+
+Transform complex legal documents into clear, actionable insights with our AI-powered platform. Built for the GenAI Exchange Hackathon with enterprise-grade design and functionality.
+
+## Hackathon Submission Details
+
+### Competition Information
+- **Event:** [GenAI Exchange Hackathon](https://vision.hack2skill.com/event/genaiexchangehackathon/)
+- **Organizer:** Google Cloud & Hack2Skill
+- **Track:** Professional Track
+- **Team:** Legal AI (Harshad Agrawal, Parth Kosthi, Krrish Talesara)
+
+### Problem Statement Alignment
+Our solution addresses the critical need for accessible legal information by:
+- **Automating complex legal document analysis** using AI
+- **Reducing barriers** to legal understanding for general public
+- **Providing actionable insights** from legal contracts and agreements
+- **Democratizing access** to legal expertise through AI-powered assistance
+
+### Google Cloud AI Integration
+- **Gemini API** - Advanced natural language processing for legal text analysis
+- **Vertex AI** - Machine learning models for risk assessment and clause classification
+- **Cloud Run** - Scalable backend deployment for document processing
+- **Firebase** - Real-time data synchronization and user management
+- **BigQuery** - Data analytics for legal document insights
+
+### Innovation Highlights
+- **AI-Powered Document Understanding** - Context-aware legal text processing
+- **Interactive Risk Visualization** - Color-coded risk indicators with detailed explanations
+- **Real-time Q&A Interface** - Conversational AI for document-specific questions
+- **Professional Report Generation** - Automated legal analysis summaries
+- **Responsive Modern UI** - Enterprise-grade user experience design
 
 ## Features
 
@@ -609,6 +650,31 @@ console.log('User action:', action);
 - **Tests**: Minimum 80% coverage
 - **Documentation**: Update README for new features
 
+## Hackathon Submission Checklist
+
+### Completed Requirements
+- ✅ **Functional Prototype** - Working demo with full AI capabilities
+- ✅ **Google Cloud Integration** - Backend deployed on Cloud Run with AI services
+- ✅ **Live Demo** - [https://harshad2321.github.io/Legal-AI-Simplifier](https://harshad2321.github.io/Legal-AI-Simplifier)
+- ✅ **Source Code** - Public GitHub repository with clean, documented code
+- ✅ **Comprehensive Documentation** - Detailed README with setup instructions
+- ✅ **Real-world Impact** - Addresses genuine legal accessibility challenges
+- ✅ **Scalable Architecture** - Enterprise-ready design patterns
+
+### Technical Implementation
+- **Frontend**: React 18 + TypeScript + TailwindCSS
+- **Backend**: Python FastAPI + Google Cloud AI
+- **Database**: Cloud Firestore for document storage
+- **AI Services**: Gemini API + Vertex AI for document processing
+- **Deployment**: Cloud Run (Backend) + GitHub Pages (Frontend)
+
+### Demo Video
+📹 **3-Minute Demo Video**: [Coming Soon]
+- Live demonstration of document upload and analysis
+- AI-powered clause extraction and risk assessment
+- Interactive Q&A with legal documents
+- Report generation and download functionality
+
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
@@ -616,13 +682,17 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 🙏 Acknowledgments
 
 - **Google Cloud** for AI and infrastructure services
-- **OpenAI** for inspiration and AI capabilities
-- **React** and **FastAPI** communities
-- **Hackathon organizers** for the opportunity
+- **GenAI Exchange Hackathon** for the platform and opportunity
+- **React** and **FastAPI** communities for excellent frameworks
+- **shadcn/ui** for beautiful component library
 
 ---
 
-*Built with � for the Google Cloud AI Hackathon by Team Legal AI*  
-*Contact: harshad.agrawal2005@gmail.com*
+## Team Legal AI - GenAI Exchange Hackathon 2025
 
-*⚠️ Disclaimer: This is AI assistance, not legal advice. Always consult with qualified legal professionals for important legal matters.*
+**Built for:** [GenAI Exchange Hackathon](https://vision.hack2skill.com/event/genaiexchangehackathon/)  
+**Team Members:** Harshad Agrawal, Parth Kosthi, Krrish Talesara  
+**Contact:** harshad.agrawal2005@gmail.com  
+**Repository:** [https://github.com/Harshad2321/Legal-AI-Simplifier](https://github.com/Harshad2321/Legal-AI-Simplifier)
+
+*Disclaimer: This is AI assistance, not legal advice. Always consult with qualified legal professionals for important legal matters.*
